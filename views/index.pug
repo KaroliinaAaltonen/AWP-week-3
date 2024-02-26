@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  label(for="input-name") Name: 
+  input#input-name(type="text")
+  br
+  label(for="input-task") Task: 
+  input#input-task(type="text")
+  br
+  button#submit-data(type="button") Add todo 
+  p#message
+  br
+  br
+  label(for="search-name") Search for User: 
+  input#search-name(type="text")
+  br
+  button#search(type="button") Search
+  p#userdata
+  p#tododata
+  br
+  button#delete-user(type="button") Delete 
+  p#deleteresponse
